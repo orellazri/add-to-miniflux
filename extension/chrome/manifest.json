@@ -3,8 +3,14 @@
   "name": "Add to Miniflux",
   "description": "Discover and add feeds to your self-hosted Miniflux instance.",
   "version": "0.1.0",
-  "permissions": ["activeTab", "storage"],
-  "host_permissions": ["http://*/*", "https://*/*"],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_title": "Add to Miniflux",

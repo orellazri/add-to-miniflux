@@ -8,11 +8,18 @@
       "id": "add-to-miniflux@orellazri",
       "strict_min_version": "109.0",
       "data_collection_permissions": {
-        "required": ["none"]
+        "required": [
+          "none"
+        ]
       }
     }
   },
-  "permissions": ["activeTab", "storage", "http://*/*", "https://*/*"],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ],
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "Add to Miniflux",
