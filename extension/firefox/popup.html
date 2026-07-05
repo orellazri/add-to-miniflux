@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add to Miniflux</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="setupPrompt" class="popup setup-prompt" style="display: none">
+      <h1>Add to Miniflux</h1>
+      <p>You need to configure your Miniflux instance before adding feeds.</p>
+      <p><a href="#" id="openOptions">Open Settings</a></p>
+    </div>
+
+    <div id="mainForm" class="popup" style="display: none">
+      <h1>Add to Miniflux</h1>
+
+      <div id="addStep">
+        <div class="form-group">
+          <label for="url">Page or Feed URL</label>
+          <input type="url" id="url" placeholder="https://example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="customTitle">Custom Name <span>optional</span></label>
+          <input type="text" id="customTitle" placeholder="Leave empty to keep feed title" />
+        </div>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="markRead" />
+          <span>Mark all entries as read after adding</span>
+        </label>
+
+        <button id="discoverBtn" class="btn btn-primary">Discover Feeds</button>
+      </div>
+
+      <div id="chooseStep" style="display: none">
+        <div class="form-group">
+          <label for="feed">Choose Feed</label>
+          <select id="feed"></select>
+        </div>
+
+        <div class="button-row">
+          <button id="backBtn" class="btn btn-secondary">Back</button>
+          <button id="addBtn" class="btn btn-primary">Add Feed</button>
+        </div>
+      </div>
+
+      <div id="status" class="status"></div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
