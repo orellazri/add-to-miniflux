@@ -2,6 +2,11 @@
 
 Browser extension for Chrome and Firefox that discovers feeds from the current tab and adds them to your self-hosted [Miniflux](https://miniflux.app/) instance.
 
+Links:
+
+- [Chrome Extension](https://chromewebstore.google.com/detail/add-to-miniflux/adeikjaciojkhlcdjlmfgemlpognlodi)
+- [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/add-to-miniflux-ext/)
+
 ## Features
 
 - Discover RSS/Atom feeds from the current page
